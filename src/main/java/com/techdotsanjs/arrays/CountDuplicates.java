@@ -1,4 +1,4 @@
-package com.techdotsanjs.duplicates;
+package com.techdotsanjs.arrays;
 
 import java.util.HashMap;
 import java.util.Map;

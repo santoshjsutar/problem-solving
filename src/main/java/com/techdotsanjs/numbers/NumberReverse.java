@@ -1,4 +1,4 @@
-package com.techdotsanjs.reverse;
+package com.techdotsanjs.numbers;
 
 public class NumberReverse {
     public static void main(String[] args) {

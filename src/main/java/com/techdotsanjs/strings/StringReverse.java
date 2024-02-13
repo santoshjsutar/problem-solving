@@ -1,4 +1,4 @@
-package com.techdotsanjs.reverse;
+package com.techdotsanjs.strings;
 
 public class StringReverse {
     public static void main(String[] args) {
