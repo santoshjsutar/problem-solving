@@ -2,7 +2,8 @@ package com.techdotsanjs.reverse;
 
 public class StringReverse {
     public static void main(String[] args) {
-        System.out.println(reverse("santosh"));
+        String inputValue = "santosh";
+        System.out.println(reverse(inputValue));
     }
 
     private static String reverse(String value) {

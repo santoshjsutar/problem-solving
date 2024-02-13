@@ -2,7 +2,8 @@ package com.techdotsanjs.reverse;
 
 public class NumberReverse {
     public static void main(String[] args) {
-        System.out.println(reverse(123456));
+        int inputValue = 123456;
+        System.out.println(reverse(inputValue));
     }
 
     private static int reverse(int value) {
