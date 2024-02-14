@@ -28,11 +28,11 @@ public class TwoSum {
 
     private static int[] twoSumOptimized(int[] values, int sum) {
         Set<Integer> compliments = new HashSet<>();
-        for (int i = 0; i < values.length; i++) {
-            if (compliments.contains(values[i])) {
-                return new int[]{sum - values[i], values[i]};
+        for (int value : values) {
+            if (compliments.contains(value)) {
+                return new int[]{sum - value, value};
             } else {
-                compliments.add(sum - values[i]);
+                compliments.add(sum - value);
             }
         }
         return new int[]{};
