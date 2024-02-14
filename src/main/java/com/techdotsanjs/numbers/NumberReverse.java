@@ -25,8 +25,7 @@ public class NumberReverse {
         int reverse = 0;
         int temp = value;
         while (temp != 0) {
-            int remainder = temp % 10;
-            reverse = reverse * 10 + remainder;
+            reverse = reverse * 10 + (temp % 10);
             temp = temp / 10;
         }
         return value == reverse;
