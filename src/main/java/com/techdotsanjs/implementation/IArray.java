@@ -24,10 +24,10 @@ public class IArray {
         return data[index];
     }
 
-    public int push(int value) {
+    public IArray push(int value) {
         data[current] = value;
         current++;
-        return current - 1;
+        return this;
     }
 
     public void pop() {
@@ -38,6 +38,18 @@ public class IArray {
         return current;
     }
 
+    public boolean has(int value) {
+        for (int i = 0; i < current; i++) {
+            System.out.println("inside for: " + i);
+            if (value == get(i)) {
+                System.out.println("inside if: " + i);
+                return true;
+            }
+        }
+        System.out.println("outside for");
+        return false;
+    }
+
     private int[] print(int[] data) {
         int[] elements = new int[current];
         for (int i = 0; i < current; i++) {
@@ -45,6 +57,7 @@ public class IArray {
         }
         return elements;
     }
+
 
     @Override
     public String toString() {

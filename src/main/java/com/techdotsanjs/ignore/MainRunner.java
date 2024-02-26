@@ -24,7 +24,9 @@ public class MainRunner {
         // 0 1 1 2 3 5 8 13 21 34 55
         int firstValue = 0, secondValue = 1, thirdValue;
 //        List<Integer> fSeries = new ArrayList<>(List.of(firstValue, secondValue));
-        int []fSeries = {firstValue, secondValue};
+        int[] fSeries = new int[numberOfSeries];
+        fSeries[0] = firstValue;
+        fSeries[1] = secondValue;
         for (int i = 2; i < numberOfSeries; i++) {
             thirdValue = firstValue + secondValue;
             fSeries[i] = thirdValue;
@@ -38,7 +40,6 @@ public class MainRunner {
         char[] valueCharacters = value.toCharArray();
         char[] resultValue;
         for (int i = value.length(); i > 0; i--) {
-
         }
     }
 
